@@ -3,13 +3,13 @@ import "./App.css";
 import ToggleButton from "./ToggleButton";
 import HoverButton from "./HoverButton";
 
-function App() {
+const App = (props) => {
   return (
     <>
       {/* <Clock date={new Date()} /> */}
-      <ToggleButton />
+      <ToggleButton label="Click Me" />
       <HoverButton />
     </>
   );
-}
+};
 export default App;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ToggleButton() {
+const ToggleButton = (props) => {
   const [isToggleOn, setIsToggleOn] = useState(true);
 
   const handleClick = () => {
@@ -10,10 +10,10 @@ function ToggleButton() {
   return (
     <div className="button-container">
       <button className="on-button" onClick={handleClick}>
-        {isToggleOn ? "ON" : "OFF"}
+        {props.label} {isToggleOn ? "ON" : "OFF"}
       </button>
       <></>
     </div>
   );
-}
+};
 export default ToggleButton;

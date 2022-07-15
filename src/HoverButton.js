@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function HoverButton() {
+const HoverButton = (props) => {
   const [isShown, setIsShown] = useState(false);
 
   return (
@@ -14,5 +14,5 @@ function HoverButton() {
       </button>
     </div>
   );
-}
+};
 export default HoverButton;
