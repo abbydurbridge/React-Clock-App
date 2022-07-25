@@ -1,5 +1,5 @@
-import UserGreeting from "./UserGreeting";
-import GuestGreeting from "./GuestGreeting";
+import UserGreeting from "../../UserGreeting";
+import GuestGreeting from "../../GuestGreeting";
 
 const Greeting = (props) => {
   if (props.isLoggedIn) {

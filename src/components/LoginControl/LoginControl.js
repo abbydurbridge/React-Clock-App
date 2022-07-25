@@ -25,6 +25,19 @@ const LoginControl = (props) => {
     <div>
       <Greeting isLoggedIn={isLoggedIn} />
       {button}
+
+      {/* Inline if with &&  */}
+      {props.hasNewMessage && <h2>You have new messages</h2>}
+
+      {/* Inline if else ? */}
+      {props.credit > 0 ? (
+        <h3>You have {props.credit} credit</h3>
+      ) : (
+        <h3>You have no credit</h3>
+      )}
+
+      {/* prevent render */}
+      {props.hasWarning ? <h4>Account Overdue</h4> : null}
     </div>
   );
 };
